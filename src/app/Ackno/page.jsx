@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const BookingAck = () => {
   return (
     <div>
@@ -61,9 +62,9 @@ const BookingAck = () => {
             </div>
           </div>
           <div className="flex justify-center mt-6">
-            <button className="btn bg-[#21b0fe] text-white w-1/3">
+            <Link href="/ManageBooking"><button className="btn  bg-[#21b0fe] text-white px-12 w-fit">
               Manage Booking
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

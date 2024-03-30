@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-
+import  Link from "next/link";
 const InterviewSelection = () => {
   const [selectedTopics, setSelectedTopics] = useState([]);
 
@@ -53,9 +53,9 @@ const InterviewSelection = () => {
           </div>
         </div>
         <div className="flex justify-center mt-6">
-          <button className="btn bg-[#21b0fe] text-white w-1/2" onClick={handleNextButtonClick}>
+          <Link href="/InterviewSlot"><button className="btn bg-[#21b0fe] text-white w-60" onClick={handleNextButtonClick}>
             Next
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

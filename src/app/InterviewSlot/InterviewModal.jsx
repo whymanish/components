@@ -61,7 +61,7 @@ const Modal = ({ isOpen, closeModal, slot, handleConfirm }) => {
                     <button
                       key={index}
                       className={`bg-[#f2f4f6] btn w-full flex flex-col justify-center items-center h-28 ${
-                        selectedDate === formattedDate ? "bg-[#21b0fe] text-white" : ""
+                        selectedDate === formattedDate ? "bg-[#9381ff] text-white" : ""
                       }`}
                       onClick={() => handleDateSelection(formattedDate)}
                     >

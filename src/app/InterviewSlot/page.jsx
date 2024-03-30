@@ -2,7 +2,7 @@
 // InterviewSlots.js
 import React, { useState } from "react";
 import InterviewModal from "./InterviewModal";
-
+import Link from "next/link";
 const InterviewSlots = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedSlot, setSelectedSlot] = useState({ slot: null, date: null, time: null });
@@ -92,7 +92,7 @@ const InterviewSlots = () => {
           <div className="flex mt-8">
             <div className="form-control">
               <label className="label cursor-pointer">
-                <input type="checkbox" defaultChecked className="checkbox" />
+                <input type="checkbox"  className="checkbox" />
                 <span className="label-text pl-4">
                   I understand that the coach will choose from above time slots
                   shared and session has to be completed as per the agreed
@@ -102,9 +102,9 @@ const InterviewSlots = () => {
             </div>
           </div>
           <div className="flex justify-start mt-6">
-            <button className="btn bg-[#21b0fe] text-white w-1/3">
+            <Link href="/Ackno"><button className="btn bg-[#21b0fe] text-white w-60">
               Book Now
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>
