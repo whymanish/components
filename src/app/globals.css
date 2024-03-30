@@ -2,32 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: 'Aeonik';
+  src: url('../utils/fonts/AeonikTRIAL-Bold.otf') format('truetype');
+  /* Add additional font weights and styles if needed */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Aeonik REGULAR */
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('../utils/fonts/AeonikProTRIAL-Regular.otf') format('truetype');
+  /* Add additional font weights and styles if needed */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.heading{
+  font-family: 'Aeonik';
+  
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+
+
+.Paras{
+  font-family: 'Aeonik Pro';
+  
+
 }
